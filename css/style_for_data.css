@@ -1,6 +1,7 @@
 .data{
     display: flex;
     gap: 1rem;
+    
 }
 .diasdaSemana p{
     font-weight: bold;

@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style_for_data.css">
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="css/modal.css">
 </head>
 <body>
 
@@ -58,11 +60,70 @@
             </section>
 
         </section>
+
+        <section class="list-task">
+            <hr>
+            <div class="newTask">
+                <button id="newTask">
+                    <i class="fa-solid fa-plus"></i>
+                    Add New Task
+                </button>
+            </div>
+        </section>
+
+
+
+        <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="fechar">&times;</span>
+            <div class="issueText">
+                <input type="text" id="taskInput" placeholder="Issue Title" class="issueTitle">
+                <textarea type="text" id="taskInputDesc" placeholder="Add description" class="issueDesc"></textarea>
+            </div>
+
+            <div class="modal-bottom">
+                <div>
+                    <button id="openModal-priority" class="btn-priority">
+                        <i data-lucide="ellipsis"></i> Priority
+                    </button>
+                    
+                    <div class="modal-priority" id="modal-priority">
+                        <div class="modal-priority-content">
+                            <span>Low</span>
+                            <span>Medium</span>
+                            <span>High</span>
+                            <span>Urgent</span>
+                            <Span>No priority</Span>
+                        </div>
+                    </div>
+                   </div>
+
+                <div>
+                    <button id="openModal-status" class="btn-status">
+                        <i data-lucide="circle-dashed" style="width: 14px;"></i>Status
+                    </button>
+                    
+                    <div class="modal-status">
+                        <div class="modal-status-content">
+                            <span>To-Do</span>
+                            <span>In progress</span>
+                            <span>Done</span>
+
+                        </div>
+                    </div>
+                  </div>
+                
+                <button id="addBtn" class="btnCreate">Create</button>
+            </div>
+        </div>
+    </div>
         
     </div>
 
     
     <script src="js/script.js"></script>
     <script src="js/script_for_date.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/addTask.js"></script>
 </body>
 </html>

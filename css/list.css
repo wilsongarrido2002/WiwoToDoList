@@ -1,0 +1,27 @@
+.list-task{
+
+   padding: 1rem 50px;
+}
+.list-task hr{
+    color: #d8d8d8;
+}
+.newTask{
+    padding: 1rem;
+}
+#newTask{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    
+    padding: 10px 15px;
+    
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+#newTask:hover{
+    color: #474747;
+    font-weight: 400;
+}
