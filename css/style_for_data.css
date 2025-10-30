@@ -1,0 +1,17 @@
+.data{
+    display: flex;
+    gap: 1rem;
+}
+.diasdaSemana p{
+    font-weight: bold;
+    font-size: 35px;
+}
+.Mes-dia{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+.Mes-dia p{
+    font-weight: 450;
+    font-size: 20px;
+}
